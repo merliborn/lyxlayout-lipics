@@ -1,0 +1,136 @@
+#% Do not delete the line below; configure depends on this
+#  \DeclareLaTeXClass{LIPIcs Article (v2019)}
+#  \DeclareCategory{Articles}
+# Layout file for LIPIcs LaTeX style file.
+# Modified by Lat.S (twitter:@merliborn) from article.layout by Matthias Ettrich
+# About LIPIcs style, see https://submission.dagstuhl.de/documentation/authors
+
+Format 66
+Input stdclass.inc
+
+SecNumDepth             3
+TocDepth                3
+
+NoStyle Chapter
+NoCounter chapter
+NoStyle Chapter*
+
+Provides inputenc       1
+Provides fontenc        1
+Provides babel          1
+Provides amsmath        1
+Provides amssymb        1
+Provides amsthm         1
+Provides enumerate 	    1
+Provides array     	    1
+Provides listing        1
+Provides hyperref       1
+Provides graphicx       1
+Provides caption        1
+Provides comment        1
+
+Provides textcomp  	    1
+Provides graphicx       1
+Provides multirow  	    1
+Provides tabularx  	    1
+Provides threeparttable 1
+Provides lineno         1
+Provides lastpage       1
+Provides rotating       1
+Provides subcaption     1
+Provides microtype      1
+Provides xcolor         1
+Provides xstring        1
+Provides cleveref       1
+Provides aliascnt       1
+Provides thmtools       1
+
+#  maybe legacy
+Provides eucal          1
+Provides lmodern        1
+Provides color          1
+
+ClassOptions
+	Other "a4paper,draft"
+End
+
+Style Part
+	Align                 Left
+	AlignPossible         Left
+	TopSep                2
+	BottomSep             1.5
+	Font
+	  Size                Larger
+	EndFont
+End
+
+
+Style Part*
+	Align                 Left
+	AlignPossible         Left
+	TopSep                2
+	BottomSep             1.5
+	Font
+	  Size                Larger
+	EndFont
+End
+
+Style Titlerunning
+	Margin
+	LatexType command
+	Category  FrontMatter
+	InTitle   1
+	LatexName titlerunning
+
+	LabelString "Title running"
+
+	Align     right
+End
+
+Style Author
+End
+
+Style Authorrunning
+End
+
+Style Authorcolumns
+End
+
+Style Copyright
+End
+
+# ccsdesc
+
+Style Keywords
+End
+
+Style Category
+End
+
+#relatedversion
+#supplement
+#funding
+#acknowledgements
+#hideLIPIcs
+
+#section
+#subsection
+#subsubsection
+#paragraph
+#paragraph*
+#subparagraph
+
+#label
+#ref
+#cref
+#autoref
+
+#caption
+#subcaption
+
+#center
+#fbox
+
+#includegraphics
+#graphicspath
+
