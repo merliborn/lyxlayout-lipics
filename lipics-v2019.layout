@@ -21,18 +21,18 @@ Provides babel          1
 Provides amsmath        1
 Provides amssymb        1
 Provides amsthm         1
-Provides enumerate 	    1
-Provides array     	    1
+Provides enumerate      1
+Provides array          1
 Provides listing        1
 Provides hyperref       1
 Provides graphicx       1
 Provides caption        1
 Provides comment        1
 
-Provides textcomp  	    1
+Provides textcomp       1
 Provides graphicx       1
-Provides multirow  	    1
-Provides tabularx  	    1
+Provides multirow       1
+Provides tabularx       1
 Provides threeparttable 1
 Provides lineno         1
 Provides lastpage       1
