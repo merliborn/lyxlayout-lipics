@@ -78,6 +78,7 @@ End
 
 Style Abstract
 	Category  MandatoryMetadata
+	InTitle   1
 End
 
 Style Titlerunning
