@@ -41,8 +41,6 @@ Provides subcaption     1
 Provides microtype      1
 Provides xcolor         1
 Provides xstring        1
-Provides cleveref       1
-Provides aliascnt       1
 Provides thmtools       1
 
 #  maybe legacy
@@ -208,7 +206,6 @@ End
 #label
 #ref
 #cref
-#autoref
 
 #caption
 #subcaption
