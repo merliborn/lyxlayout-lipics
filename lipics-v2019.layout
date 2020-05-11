@@ -51,7 +51,7 @@ Provides lmodern        1
 Provides color          1
 
 ClassOptions
-	Other "a4paper,draft"
+	Other "a4paper,draft,authorcolumns"
 End
 
 Style Part
@@ -64,7 +64,6 @@ Style Part
 	EndFont
 End
 
-
 Style Part*
 	Align                 Left
 	AlignPossible         Left
@@ -75,43 +74,129 @@ Style Part*
 	EndFont
 End
 
+Style Title
+	Category MandatoryMetadata
+End
+
+Style Abstract
+	Category  MandatoryMetadata
+End
+
 Style Titlerunning
-	Margin
-	LatexType command
-	Category  FrontMatter
+	Margin    Static
+	Align     right
+
+	LatexType Command
+	Category  MandatoryMetadata
 	InTitle   1
 	LatexName titlerunning
 
 	LabelString "Title running"
-
-	Align     right
 End
 
 Style Author
+	Argument post:1
+		LabelString "Affiliation"
+		Mandatory   1
+	EndArgument
+	Argument post:2
+		LabelString "email"
+		Mandatory   1
+	EndArgument
+	Argument post:3
+		LabelString "orcid"
+		Mandatory   1
+	EndArgument
+	Argument post:4
+		LabelString "funding"
+		Mandatory   1
+	EndArgument
+
+	LatexType Command
+	Category  MandatoryMetadata
 End
 
 Style Authorrunning
-End
+	Margin    Static
+	Align     right
 
-Style Authorcolumns
+	LatexType Command
+	Category  MandatoryMetadata
+	InTitle   1
+	LatexName authorrunning
 End
 
 Style Copyright
+	LatexName Copyright
+	LatexType Command
+	Category  MandatoryMetadata
+	InTitle   1
+
+	Margin    Static
 End
 
-# ccsdesc
+Style CCSDesc
+	Category  MandatoryMetadata
+	LatexName ccsdesc
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
+End
 
 Style Keywords
+	Category  MandatoryMetadata
+	LatexName keywords
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
+End
+
+Style RelVersion
+	Category  MandatoryMetadata
+	LatexName relatedversion
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
 End
 
 Style Category
+	Category  FrontMatter
+	LatexName category
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
 End
 
-#relatedversion
-#supplement
-#funding
-#acknowledgements
-#hideLIPIcs
+Style Supplement
+	Category  FrontMatter
+	LatexName supplement
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
+End
+
+Style Funding
+	Category  FrontMatter
+	LatexName funding
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
+End
+
+Style Acknowledgements
+	Category  FrontMatter
+	LatexName acknowledgements
+	LatexType Command
+	InTitle   1
+
+	Margin    Static
+End
 
 #section
 #subsection
